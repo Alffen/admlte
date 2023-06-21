@@ -1827,11 +1827,11 @@
       $__default["default"](SELECTOR_SIDEBAR$1).on('collapsed.lte.treeview expanded.lte.treeview', function () {
         _this.fixLayoutHeight();
       });
-      // $__default["default"](SELECTOR_MAIN_SIDEBAR).on('mouseenter mouseleave', function () {
-      //   if ($__default["default"]('body').hasClass(CLASS_NAME_SIDEBAR_COLLAPSED$1)) {
-      //     _this.fixLayoutHeight();
-      //   }
-      // });
+      $__default["default"](SELECTOR_MAIN_SIDEBAR).on('mouseenter mouseleave', function () {
+        if ($__default["default"]('body').hasClass(CLASS_NAME_SIDEBAR_COLLAPSED$1)) {
+          _this.fixLayoutHeight();
+        }
+      });
       $__default["default"](SELECTOR_PUSHMENU_BTN).on('collapsed.lte.pushmenu shown.lte.pushmenu', function () {
         setTimeout(function () {
           _this.fixLayoutHeight();
